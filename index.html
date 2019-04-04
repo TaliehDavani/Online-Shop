@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.1/sweetalert2.min.js" ></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Limelight|Lato" rel="stylesheet">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="requetes/requetesFilms.js"></script>
+	<script src="vues/vuesFilms.js"></script>
+	<link rel="stylesheet" href="css/css.css">
+
+</head>
+<body onload="requetes('lister','');">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12" id="page-header">
+					<h1>My movie</h1>      
+					<p>Meilleurs films du monde</p>
+
+		        </div>
+			
+		<div class="row" id="main">
+			
+			<div class="col-12">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2" style="background-color: #e69900;">
+				   <a class="navbar-brand" href="#" onclick="requetes('lister','');">Films</a>
+				    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					 <span class="navbar-toggler-icon"></span>
+				    </button>
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					   <ul class="navbar-nav mr-auto">
+					   
+						  <li class="nav-item"><a class="nav-link" href="#" onclick="requetes('listercategorie','Action');">Action</a></li>
+						  <li class="nav-item"><a class="nav-link" href="#" onclick="requetes('listercategorie','Comedie');">Comedie</a></li>
+						  <li class="nav-item"><a class="nav-link" href="#" onclick="requetes('listercategorie','Animation');">Animation</a></li>
+						  <li class="nav-item"><a class="nav-link" href="#" onclick="requetes('listercategorie','Horreur');">Horreur</a></li>
+						  <li class="nav-item"><a class="nav-link" href="#" onclick="requetes('listercategorie','Romantique');">Romantique</a></li>
+					  	
+					  </ul>
+						 
+					  </div>	  
+				</nav>
+			</div>
+		
+				
+			 <div class="col-12">
+				    <div id ="contenu"class="card-deck"> 
+					</div>
+			</div>	        
+							
+			     
+		</div>	
+			
+			
+
+
+</div>
+</div>
+
+
+		<footer class="container-fluid text-center">
+		  <p>Talieh Davani(c) 2019 </p>  
+		 
+		</footer>
+
+</body>
+</html>
